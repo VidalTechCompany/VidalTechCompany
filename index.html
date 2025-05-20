@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VidalTechCompany</title>
+
+        <link rel="stylesheet" href="styles.css" />
+
+  <style>
+
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #0a0a23; color: white; padding: 1em; text-align: center; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    section { padding: 2em; }
+    h2 { color: #0a0a23; }
+    .cta { background: #0077cc; color: white; padding: 1em 2em; display: inline-block; border-radius: 5px; text-decoration: none; }
+    .services, .portfolio, .testimonials { display: grid; gap: 1em; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card { background: #f5f5f5; padding: 1em; border-radius: 5px; }
+    form { display: flex; flex-direction: column; max-width: 400px; margin-top: 1em; }
+    input, textarea { padding: 0.8em; margin: 0.5em 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { padding: 1em; background: #0077cc; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>VidalTechCompany</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="hero">
+  <h2>Empowering Businesses Through Innovative Tech & Creative Design</h2>
+  <p>Welcome to VidalTechCompany – your trusted partner in digital innovation.</p>
+  <a class="cta" href="#contact">Get In Touch</a>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Hi, I’m <strong>Vidal</strong> – a software developer, IT consultant, graphic designer, and a passionate ICT student. I created VidalTechCompany to help businesses harness the power of technology and design.</p>
+  <ul>
+    <li><strong>Mission:</strong> Deliver reliable, innovative digital solutions.</li>
+    <li><strong>Vision:</strong> Become a top tech solutions provider.</li>
+    <li><strong>Core Values:</strong> Innovation, Integrity, Simplicity, Collaboration, Learning.</li>
+  </ul>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Software Development</h3>
+      <p>Custom apps for web, desktop, and mobile platforms.</p>
+    </div>
+    <div class="card">
+      <h3>IT Consulting</h3>
+      <p>Expert advice on systems, infrastructure, and digital strategy.</p>
+    </div>
+    <div class="card">
+      <h3>Website Design</h3>
+      <p>Modern, responsive websites tailored to your needs.</p>
+    </div>
+    <div class="card">
+      <h3>Graphic Design</h3>
+      <p>Logos, branding, posters, and other visual assets.</p>
+    </div>
+    <div class="card">
+      <h3>Tech Support & Training</h3>
+      <p>On-demand help and personalized training for businesses.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="portfolio">
+    <div class="card">
+      <h3>E-commerce Website</h3>
+      <p>Built a store with login, payments & admin panel.<br><em>HTML, CSS, JS, PHP, MySQL</em></p>
+    </div>
+    <div class="card">
+      <h3>Inventory System</h3>
+      <p>Windows app for stock tracking & reporting.<br><em>C#, SQL Server</em></p>
+    </div>
+    <div class="card">
+      <h3>Brand Identity Kit</h3>
+      <p>Designed full branding package for a local business.</p>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="card">
+      <p>"VidalTechCompany built a custom app for my business that exceeded expectations!"</p>
+      <p>– Jane Doe, CEO of LocalBiz</p>
+    </div>
+    <div class="card">
+      <p>"The logo and website truly reflect our brand. Clear communication and fast delivery!"</p>
+      <p>– Samuel T., Marketing Lead</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Let's connect and grow your business together.</p>
+  <p>Email: <a href="mailto:vidal@vidaltechcompany.com">vidal@vidaltechcompany.com</a></p>
+  <p>Phone/WhatsApp: +254113062989</p>
+  <p>Social: LinkedIn | Instagram | Facebook</p>
+
+  <form action="#" method="post">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 VidalTechCompany. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" title="Back to top">↑</button>
+  <script src="main.js"></script>
+</body>
+</html>>
