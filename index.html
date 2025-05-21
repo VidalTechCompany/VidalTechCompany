@@ -1,26 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VidalTechCompany</title>
-
-        <link rel="stylesheet" href="styles.css" />
-
-  <style>
-
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background: #0a0a23; color: white; padding: 1em; text-align: center; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    section { padding: 2em; }
-    h2 { color: #0a0a23; }
-    .cta { background: #0077cc; color: white; padding: 1em 2em; display: inline-block; border-radius: 5px; text-decoration: none; }
-    .services, .portfolio, .testimonials { display: grid; gap: 1em; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-    .card { background: #f5f5f5; padding: 1em; border-radius: 5px; }
-    form { display: flex; flex-direction: column; max-width: 400px; margin-top: 1em; }
-    input, textarea { padding: 0.8em; margin: 0.5em 0; border: 1px solid #ccc; border-radius: 5px; }
-    button { padding: 1em; background: #0077cc; color: white; border: none; border-radius: 5px; cursor: pointer; }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -82,11 +66,11 @@
   <div class="portfolio">
     <div class="card">
       <h3>E-commerce Website</h3>
-      <p>Built a store with login, payments & admin panel.<br><em>HTML, CSS, JS, PHP, MySQL</em></p>
+      <p>Built a store with login, payments & admin panel.<br /><em>HTML, CSS, JS, PHP, MySQL</em></p>
     </div>
     <div class="card">
       <h3>Inventory System</h3>
-      <p>Windows app for stock tracking & reporting.<br><em>C#, SQL Server</em></p>
+      <p>Windows app for stock tracking & reporting.<br /><em>C#, SQL Server</em></p>
     </div>
     <div class="card">
       <h3>Brand Identity Kit</h3>
@@ -110,22 +94,45 @@
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>Let's connect and grow your business together.</p>
-  <p>Email: <a href="mailto:vidal@vidaltechcompany.com">vidal@vidaltechcompany.com</a></p>
-  <p>Phone/WhatsApp: +254113062989</p>
-  <p>Social: LinkedIn | Instagram | Facebook</p>
+ <h2>Contact Us</h2>
+<form id="contact-form">
+  <div class="field">
+    <input type="text" name="title" id="title" placeholder=" " />
+    <label for="title">Title</label>
+  </div>
 
-  <form action="#" method="post">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+  <div class="field">
+    <input type="text" name="name" id="name" required placeholder=" " />
+    <label for="name">Name</label>
+  </div>
+
+  <div class="field">
+    <input type="text" name="time" id="time" placeholder=" " />
+    <label for="time">Time</label>
+  </div>
+
+  <div class="field">
+    <input type="email" name="email" id="email" required placeholder=" " />
+    <label for="email">Email</label>
+  </div>
+
+  <div class="field">
+    <textarea name="message" id="message" rows="4" required placeholder=" "></textarea>
+    <label for="message">Message</label>
+  </div>
+
+  <input type="submit" id="button" value="Send Email" />
+</form>
+
 
 <footer>
-    <p>&copy; 2025 VidalTechCompany. All rights reserved.</p>
-  </footer>
+  <p>&copy; 2025 VidalTechCompany. All rights reserved.</p>
+</footer>
 
-  
+<button id="scrollTopBtn" title="Back to top">&#8679;</button>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
